@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1 style="text-align:center">{{ titulo }}</h1>
+
+<h2>Ordenadas alfabéticamente</h2>
+
+<img src="./assets/img/regionesItalia.png" alt="Regiones de Italia" style="float:right;width: 850px;height: 850px;">
+<ul>
+  <li *ngFor = "let region of regiones"><a [routerLink]="['region', region.idRegion]">{{ region.nombre }}</a></li>
+</ul> 
+
+
+</body>
+</html>

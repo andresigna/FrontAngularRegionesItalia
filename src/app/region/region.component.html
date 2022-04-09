@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center"><a [routerLink]="['']"> {{titulo}} </a></h1>
+
+<h2>Region de {{region.nombre}} </h2>
+
+<table>
+  <tr>
+    <th>Capital</th>
+    <th>Provincias</th>
+    <th>Poblacion</th>
+    <th>Superficie</th>
+  </tr>
+  <tr>
+    <td> {{region.capital}} </td>
+    <td>
+      <ul>
+        <li *ngFor = "let provincia of provincias">{{ provincia.nombre }}</li>
+      </ul>
+    </td>
+    <td> {{region.poblacion}} hab. </td>
+    <td> {{region.superficie}} km<sup>2</sup> </td>
+  </tr>
+</table>
+
+
