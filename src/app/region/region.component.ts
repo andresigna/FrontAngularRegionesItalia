@@ -16,7 +16,9 @@ export class RegionComponent implements OnInit {
   indiceRegion: number;
   titulo = 'Regiones de Italia';
 
-  constructor(private servicioRegion: RegionesApiService, private servicioProvincias:ProvinciasApiService, private route: ActivatedRoute) { }
+  constructor(private servicioRegion: RegionesApiService, 
+    private servicioProvincias:ProvinciasApiService, 
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
 

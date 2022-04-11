@@ -14,7 +14,8 @@ export class RegionesComponent implements OnInit {
 
   public regiones: Region[];
 
-  constructor(private servicioRegiones: RegionesApiService, private route: ActivatedRoute) { }
+  constructor(private servicioRegiones: RegionesApiService, 
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
 
